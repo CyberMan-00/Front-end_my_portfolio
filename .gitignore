@@ -1,4 +1,7 @@
 src/mail.php
 dist/mail.php
+src/mailer/mail.php
+dist/mailer/mail.php
+
 
 node_modules/

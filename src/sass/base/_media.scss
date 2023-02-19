@@ -13,6 +13,11 @@
     .container {
         padding: 0 20px;
     }
+    .container {
+        .section-background {
+            padding: 0 20px;
+        }
+    }
 }
 @media screen and (max-width: 1000px) {
     .about-me__right {
