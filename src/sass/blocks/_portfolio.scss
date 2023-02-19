@@ -1,0 +1,90 @@
+.portfolio {
+    
+    &__top {
+        display: block;
+        margin:0 auto;
+        max-width: 750px;
+        padding: 0 20px;
+        margin-bottom: 45px;
+    }
+    // &__title {
+
+    // }
+    // &__subtitle {
+        
+    // }
+    &__grid {
+        margin: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(3,minmax(100px,250px));
+        grid-template-rows: repeat(2, minmax(100px,250px));
+        grid-auto-rows: minmax(100px,250px);
+        gap: 40px;
+
+        grid-template-areas: 
+        'uber pulse test1'
+        'test2 test2 test1';
+        justify-content: center;
+        :nth-child(1) {
+            grid-area: uber;
+        }
+        :nth-child(2) {
+            grid-area: pulse;
+        }
+        :nth-child(3) {
+            grid-area: test1;
+        }
+        :nth-child(4) {
+            grid-area: test2;
+        }
+        &__item {
+            position: relative;
+            border-radius:30px;
+            transition: 0.3s all;
+            border: 5px solid $main-color-white;
+            img {
+                border-radius:25px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &__overlay {
+                position: absolute; 
+                background: rgba(0, 0, 0, 0.5);
+                width: 100%;
+                bottom: 50%;
+                transform: translateY(50%); 
+                transition: 0.3s all;
+                visibility: hidden;
+                opacity:0;
+                
+                color: white;
+                font-size: 20px;
+                padding: 20px;
+                text-align: center;
+                text-transform: capitalize;
+            }
+            &:hover {
+                transition: 0.3s all;      
+                box-shadow: 0 5px 15px black;
+                transform: scale(1.05);
+                text-decoration: none;
+                filter: grayscale(100%);
+            }
+            &:hover &__overlay {
+                transition: 0.3s all;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    .section-background {
+        min-height: 700px;
+        padding: 100px 0 60px 0;
+        background-color: $main-color-grey;
+        border-radius: 30px;
+    
+        position: relative;
+        z-index: 0;
+    }
+}

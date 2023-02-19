@@ -1,0 +1,34 @@
+.side-panel {
+    padding: 11px 18px;
+    min-height: 42px;
+    min-width: 346px;
+    border-radius: 25px;
+    background-color: $main-color-black;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    position: fixed;
+    z-index: 1;
+    left: -100px;
+    top: 50%;
+    transform: translateY(-50%) rotateZ(90deg);
+
+    &__divider {
+        width: 25px;
+        height: 3px;
+        background-color: $main-color-white;
+    }
+    &__text {
+        color: $main-color-white;
+        transform: rotateZ(180deg);
+        margin-bottom: 0;
+    }
+    &__link {
+        transform: rotateZ(-90deg);
+        &:hover {
+            @include svg_icon_hover_red;
+        }
+    }
+}

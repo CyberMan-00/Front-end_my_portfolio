@@ -1,0 +1,87 @@
+
+// Medium screen <1400px
+@media screen and (max-width: 1399px) {
+    .side-panel {
+        left: -140px;
+    }
+}
+// Medium screen <1200px
+@media screen and (max-width: 1199px) {
+    .side-panel {
+        display: none;
+    }
+    .container {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .about-me__right {
+        max-width: 420px;
+    }
+    .contact-me__right {
+        max-width: 420px;
+    }
+    .privacy_policy {
+        margin-top: 20px;
+    }
+}
+// Medium screen <992px
+@media screen and (max-width: 991px) {
+    .portfolio {
+        &__grid {
+            gap: 20px;
+            &__item {
+                &__overlay{
+                    visibility: visible;
+                    opacity:1;
+                }
+            }
+        } 
+    }
+
+}
+@media screen and (max-width:850px) {
+    .about-me__photo {
+        max-width: 600px;;
+    }
+    .about-me__right {
+        max-width: 600px;
+    }
+    .contact-me__photo {
+        max-width: 600px;
+    }
+    .contact-me__right {
+        max-width: 600px;
+    }
+}
+// Small screen <768px
+@media screen and (max-width: 767px) {
+    .portfolio {
+        &__grid {
+            grid-template-columns: repeat(2, minmax(100px, 250px));
+            grid-template-rows: repeat(2, 250px);
+            grid-auto-flow: row;
+            grid-template-areas:
+            "uber  pulse" 
+            "test1 test2";
+        }
+    }
+    .section_title {
+        font-size: 32px;
+        line-height: 60px;
+    }
+}
+@media screen and (max-width: 690px) {
+    .section_title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+// Small screen <576px 
+@media screen and (max-width: 575px) {
+    .promo {
+        &__scan-me {
+            display: none;
+        }
+    }
+}

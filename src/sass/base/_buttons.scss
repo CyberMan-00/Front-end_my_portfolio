@@ -1,0 +1,54 @@
+.button {
+    // min-height: 50px;
+    // min-width: 150px;
+    // font
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: center;
+    color:$main-color-white;
+    // background
+    background-color: $main-color-red;
+    border: none;
+    border-radius:25px;
+    padding: 12px 23px;
+    // animation
+    transition: 0.3s all;
+    box-shadow: 0 0px 0px $main-color-black;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 5px 15px $main-color-black;
+        transform: translateY(-5px);
+    }
+    &:active {
+        box-shadow: 0 0 0 $main-color-black;
+        transform: translateY(0px);
+    }
+    // experimental rotating red button 
+    &_vertical_rotating {
+        //font
+        font-size: 24px; //24px;
+        line-height: 36px; //36px;
+
+        transform: rotateZ(-90deg);
+        height: 150px;
+        width: 150px;
+        border-radius:0px;
+
+        &:hover {
+            border-radius:100px;
+            box-shadow: 0 5px 15px $main-color-black;
+            transform: translateY(-5px);
+        }
+        &:active {
+            box-shadow: 0 0 0 $main-color-black;
+            transform: translateY(0px);
+        }
+        //vertical text - experimental
+        // writing-mode: vertical-rl;
+        // text-orientation: upright;
+    }
+    &_submit {
+        padding: 12px 67px;
+    }
+}

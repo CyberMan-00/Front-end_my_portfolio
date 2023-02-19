@@ -1,0 +1,22 @@
+@keyframes rotate_positive {
+    from {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(180deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes rotate_negative {
+    from {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(-180deg);
+    }
+    to {
+        transform: rotateZ(-360deg);
+    }
+}

@@ -1,0 +1,50 @@
+@import 'base/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+// base files 
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/general-elements';
+@import 'base/buttons';
+@import 'base/animations';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+}
+.container {
+    max-width:  1140px;
+    margin: 0 auto;    
+}
+.container-cv {
+    max-width:  1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // background-color: $main-color-grey;
+    // background-image: linear-gradient(135deg, $main-color-red-faded 0%, $main-color-grey 100%);
+}
+// blocks 
+@import 'blocks/side-panel';
+@import 'blocks/menu';
+@import 'blocks/promo';
+@import 'blocks/about-me';
+@import 'blocks/more-info';
+@import 'blocks/tech-stack';
+@import 'blocks/other-skills';
+@import 'blocks/portfolio';
+@import 'blocks/contact-me';
+@import 'blocks/footer';
+@import 'blocks/pageup';
+
+@import 'blocks/forms';
+@import 'blocks/modal';
+// media settings
+@import 'base/media';
